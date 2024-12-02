@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 *{
     font-size: 13px;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -39,7 +40,6 @@ body{
 }
 
 #user_name{
-    font-family: 'Roboto';
     color: #FAF0E5;
     font-size: 12px;
 }
@@ -55,7 +55,6 @@ button{
     margin: 10px;
     background-color: rgba(255, 255, 255, 0);
     color: #FAF0E5;
-    font-family: 'Roboto', sans-serif;
     font-weight: bold; 
 }
 
@@ -65,15 +64,36 @@ button{
 
 
 .footer_container{
+    color: #FAF0E5;
     flex-shrink: 0;
     display: flex;
-    flex-direction: row;
     width: 100vw;
     height: 150px;
 }
 
 .footer{
+    display: flex;
+    padding: 0;
+    margin: 0;
     height: 100%;
     width: 100%;
     background-color: #28282B;
 }
+
+.footer_box_one{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+.footer_box_one h2{
+    margin-left: 50px;
+}
+
+.footer_box_two{
+    height: 100%;
+    width: 25%;
+}
+
