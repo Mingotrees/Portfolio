@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body{
+    background-color: #FAF0E5;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #28282B;
+}
+
+.header_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #FAF0E5;
+}
+
+#page_title{
+    padding-left: 60px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 200px;
+    font-size: 50px;
+    font-style: normal;
+}
+
+button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
