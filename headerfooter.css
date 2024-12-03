@@ -73,8 +73,8 @@ button{
 
 .footer{
     display: flex;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     height: 100%;
     width: 100%;
     background-color: #28282B;
@@ -84,7 +84,7 @@ button{
     display: flex;
     flex-direction: column;
     align-content: center;
-    width: 25%;
+    width: 19%;
     height: 100%;
 }
 
@@ -93,7 +93,26 @@ button{
 }
 
 .footer_box_two{
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 25%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer_box_three{
+    display: flex;
+    margin-left: 35%;
+    height: 100%;
+    width: 20%;
+}
+
+.footer_box_three img{
+    align-content: center;
+    display: flex;
+    margin-top: 4vw;
+    height: 20%;
+    margin-left: 40px;
 }
 
