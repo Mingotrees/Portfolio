@@ -1,4 +1,17 @@
 .body_container{
+    display: flex;
+    flex-direction: row;
     flex-grow: 1;
     overflow-y: auto;
+}
+
+
+.intro_section{
+    width: 100%;
+    height: 70vh;
+    background-image: url(/assets/homepage_assets/home_page_img.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    object-fit: cover;
 }
