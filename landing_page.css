@@ -133,7 +133,7 @@ p{
     font-weight: lighter;
     margin-left: 30px;
     font-size: 0.5vw;
-    margin-top: 10px;
+    margin-top: 0.5vh;
 }
 
 .portfolio_label > h2{
@@ -142,3 +142,8 @@ p{
     margin-bottom: 5px;
     margin-top: 15px;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
