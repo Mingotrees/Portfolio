@@ -27,7 +27,7 @@ p{
     display: flex;
     width: 100%;
     height: 100vh;
-    background-image: url(/assets/homepage_assets/home_page_img.jpeg);
+    background-image: url(assets/homepage_assets/home_page_img.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
