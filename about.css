@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+}
+
+.body_container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.content_container{
+    height: 100%;
+    width: 65%;
+}
+
+.about_me{
+    margin: 10px;
+    animation-name: slideInLeft;
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    overflow-y: hidden;
+    align-content: center;
+    height: 50%;
+    width: 100%;
+    background-color: #28282B;
+    color: #FAF0E5;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.about_me:hover{
+    color: #28282B;
+    background-color: #FAF0E5;
+}
+
+.about_repo{
+    margin: 10px;
+    animation-name: slideInLeft;
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    overflow-y: hidden;
+    height: 50%;
+    width: 100%;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.about_repo:hover{
+    background-color: #28282B;
+    color: #FAF0E5;
+}
+
+.image_container{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    height: 100%;
+    width: 35%;
+    margin-right: 120px;
+}
+
+.about_me > h1{
+    font-size: 100px;
+    padding-top: 60px;
+    padding-left: 120px;
+}
+
+.about_me > p{
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 120px;
+}
+
+.about_repo > h1{
+    font-size: 100px;
+    padding-top: 60px;
+    padding-left: 120px;
+}
+
+.about_repo > p{
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 120px;
+}
+
+.image_container > img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

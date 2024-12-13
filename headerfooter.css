@@ -7,8 +7,27 @@
 }
 
 a{
+    height: fit-content;
+}
+
+a > button{
+    font-family: "Roboto";
+    font-weight: bold;
+    background-color: #28282B;
+    color: #FAF0E5;
+    height: 30px;
+    width: 80px;
+    margin: 5px;
+    padding: 0;
+    border: none;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+
+a{
     text-decoration: none;
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -61,12 +80,15 @@ body{
 
 
 .button_container > button{
-    height: 30px;
-    border: none;
-    margin: 10px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: #28282B;
     color: #FAF0E5;
-    font-weight: bold; 
+    font-weight: bold;
+    border: none;
+}
+
+a > button:hover{
+    background-color: #FAF0E5;
+    color: #28282B;
 }
 
 
@@ -83,6 +105,7 @@ body{
     width: 100vw;
     height: 150px;
 }
+
 
 .footer{
     display: flex;
@@ -102,9 +125,10 @@ body{
     height: 100%;
 }
 
-.footer_box_one > h2, .footer_box_two > h2{
+.footer_box_one > a > h2, .footer_box_two  > a > h2{
     margin-left: 50px;
     padding: 10px;
+    color: #FAF0E5;
 }
 
 .footer_box_two{
@@ -117,14 +141,14 @@ body{
 }
 
 
-.footer_box_three{
+.footer_box_three > a{
     display: flex;
     margin-left: 35%;
     height: 100%;
     width: 20%;
 }
 
-.footer_box_three img{
+.footer_box_three > a > img{
     align-content: center;
     display: flex;
     margin-top: 4vw;

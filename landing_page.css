@@ -1,6 +1,16 @@
-@font-face{
-    font-family: custom;
-    src: url(/assets/Righteous,Roboto/Roboto/Roboto-Bold.ttf);
+@font-face {
+    font-family: "custom";
+    src: url("/assets/Righteous,Roboto/Roboto/Roboto-Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Righteous";
+    src: url("/assets/Righteous,Roboto/Righteous/Righteous-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/assets/Righteous,Roboto/Roboto/Roboto-Regular.ttf") format('truetype');
 }
 
 * {
@@ -22,40 +32,105 @@ p{
     background-repeat: no-repeat;
     background-position: bottom;
     object-fit: cover;
-    align-content: center;
-    justify-content: center;
+    justify-content: start;
     -webkit-box-shadow: 0px 7px 12px -4px rgba(92,92,92,1);
     -moz-box-shadow: 0px 7px 12px -4px rgba(92,92,92,1);
     box-shadow: 0px 7px 12px -4px rgba(92,92,92,1);
 }
 
-.intro_section > div{
-    width: 100%;
-    align-self: center;
-    align-content: center;
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
 }
 
-.intro_section > div > h1{
-    margin-top: 10px;
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+}
+
+.left{
+    height: 100%;
+    width: 55%;
+}
+
+.left > h1{
+    animation-name: slideInLeft;
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    margin-top: 12vh;
+    margin-left: 10vh;
     display: flex;
-    justify-content: center;
-    font-size: 120px;
+    font-size: 300px;
     font-family: "Righteous";
 }
 
-.intro_section > div > p{
-    display: flex;
-    font-size: 15px;
+.left > p{
+    animation-name: slideInLeft;
+    animation-duration: 8s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    font-size: 30px;
     font-weight: bold;
     justify-content: center;
     margin-bottom: 50px;
+    margin-left: 12vh;
+}
+
+.right{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25vh;
+    height: 100%;
+    width: 45%;
+}
+
+.right > h1{
+    font-style: italic;
+    font-size: 100px;
 }
 
 #abtBtn {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
     margin: auto;
-    display: block;
-    height: 35px;
-    width: 100px;
+    height: 50px;
+    width: 160px;
+    margin-top: 80px;
+    margin-left: 12vh;
+    background-color: #28282B;
+    color: #FAF0E5;
+    font-weight: bold;
+    font-family: "Roboto";
+    transition:  background-color 0.3s ease-in-out, color 0.3 ease-in-out;
+}
+
+#abtBtn:hover{
+    background-color: #FAF0E5;
+    color: #28282B;
 }
 
 
@@ -67,6 +142,12 @@ p{
 }
 
 .portfolio_section > div > h1{
+    animation-name: fadeIn;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
     display: flex;
     justify-content: center;
     font-size: 55px;
@@ -74,6 +155,12 @@ p{
 }
 
 .portfolio_containers{
+    animation-name: fadeIn;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
     overflow-y: scroll;
     display: flex;
     flex-wrap: wrap;
@@ -92,6 +179,15 @@ p{
     -webkit-box-shadow: 0px 7px 12px -4px rgba(92,92,92,1);
     -moz-box-shadow: 0px 7px 12px -4px rgba(92,92,92,1);
     box-shadow: 0px 7px 12px -4px rgba(92,92,92,1);
+    transition: transform 1000ms;
+    z-index: 1;
+    position: relative;
+}
+
+.portfolio_box:hover,
+.button:focus-visible{
+    transform: translateY(-2rem);
+    transition: transform 250ms;
 }
 
 .img_container{
@@ -117,8 +213,13 @@ p{
     border-bottom-right-radius: 6%;
     color: #FAF0E5;
     overflow: hidden;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
+.portfolio_label:hover{
+    background-color: #FAF0E5;
+    color: #28282B;
+}
 
 .portfolio_label > *{
     font-family: "custom",sans-serif;
