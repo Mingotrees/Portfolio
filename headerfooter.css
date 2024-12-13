@@ -141,18 +141,19 @@ a > button:hover{
 }
 
 
-.footer_box_three > a{
+.footer_box_three{
     display: flex;
     margin-left: 35%;
     height: 100%;
     width: 20%;
 }
 
-.footer_box_three > a > img{
+
+
+.footer_box_three > a{
     align-content: center;
     display: flex;
     margin-top: 4vw;
     height: 20%;
     margin-left: 40px;
 }
-
